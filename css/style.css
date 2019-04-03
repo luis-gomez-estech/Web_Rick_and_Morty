@@ -1,3 +1,5 @@
+
+
 body{
     
 	/* PARA PONER UNA IMAGEN DE FONDO Y ADEMAS PODER TINTAR LA IMAGEN (UN OVERLOAD O COVER COMO WORDPRESS) */
@@ -30,13 +32,11 @@ body{
 
 }
 
-.grid { 
-	  display: grid;
-	  grid-template-columns: 1fr 1fr 1fr;
-	  grid-gap: 40px;
+hr {
+	width: 200px;
 }
 
-.card {
+.card2 {
 	border: 1px solid rgba(0,0,0,0.5);
 	background: rgba(0,0,0,0.6) !important;
 }
@@ -47,111 +47,32 @@ body{
 	color: #6255b5;
 	background: rgba(255,255,263,0.8);
 	padding: 10px;
-}
-
-
-/* Estilo de la card */
-.list-group-item {
-    background: transparent;
-    border-top: 0px !important;
-    border-bottom: 0px solid #fff !important;
-    border-left: 0px !important;
-    border-right: 0px !important;
-    height: 40px;
-     
+	text-align: center !important;
+	font-size: 16px;
 }
 
 
 .caracteristicasL {
 	float: left;
-	margin-left: 10px !important;
+	margin-left: 30px !important;
 	font-weight: bold;
 	font-size: 12px;
 	color:  #ec5b16;
-}
+	
+	}
 
 .caracteristicasR {
 	float: right;
-	margin-right: 10px !important;
+	margin-right: 30px !important;
 	font-weight: bold;
 	font-size: 12px;
 	color: #fff;
-}
-
-
-
-@media screen and (max-width: 768px) {
-	
-	.container {
-		flex-direction: column;
-	}
-
-	.grid { 
-	  display: grid;
-	  grid-template-columns: 1fr 1fr;
-	  grid-gap: 20px;
-	}
-
-}
-
-
-@media screen and (max-width: 480px) {
-	
-	.container {
-		flex-direction: column;
-	}
-
-	.grid { 
-	  display: grid;
-	  grid-template-columns: 1fr;
-	  grid-gap: 20px;
-	}
 
 }
 
 
 
 
-
-
-
-
-/*
-.item {
-	color: #000 !important;
-	text-align: center;
-	color: #000;
-	background: rgba(0,0,0,0.86);
-	border: 2px solid #000;
-	margin-left: 20px;
-	margin-right: : 20px;
-	padding: 25px;
-
-}
-
-
-.item1_2{
-	order: 1;
-	flex-grow: 1;
-}
-
-.item2_2{
-	order: 2;
-	flex-grow: 1;
-}
-
-.item3_2{
-	order: 3;
-	flex-grow: 1;
-}
-
-.item4_2{
-	order: 4;
-	flex-grow: 1;
-}
-
-
-*/
 
 
 

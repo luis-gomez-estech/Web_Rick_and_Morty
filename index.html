@@ -3,20 +3,26 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>JSON</title>
+  <title>AJAX</title>
 
   <link rel="icon" type="image/png" href="imagenes/logo.ico" /> 
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<!-- Necesario para que funcione el carousel -->
+  <!-- Necesario para que funcione el carousel -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
+<!--
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jqgrid/4.6.0/css/ui.jqgrid.css"></script> 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jqgrid/4.6.0/js/i18n/grid.locale-es.js"></script> 
+
+-->
+
   <link rel="stylesheet" type="text/css" href="css/style.css"> 
- 
+
 </head>
 
 <body>
@@ -64,204 +70,90 @@
 
   <div class="grid">
 
-      <!-- CARD 1 -->
-      
-      <div class="card card-inverse card-primary text-center">
-        <img class="card-img-top" src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="Card">
-        <div class="card-block">
-          <h5 class="card-title">Rick Sanchez</h5> 
-          <div class="card-body">   
 
-            <!-- Aqui lo uso agrupando para poner elementos en horizontal, y poder poner la palabra Nombre: y a la derecha el nombre del personaje -->
-            <ul class="list-group-item list-inline">
-              <li class="caracteristicasL">Species</li>
-              <li class="caracteristicasR">Human</li>
-            </ul>
-
-            <hr>
-
-            <ul class="list-group-item list-inline">
-              <li class="caracteristicasL">Gender</li>
-              <li class="caracteristicasR">Male</li>
-            </ul>  
-
-            <hr>
-
-            <ul class="list-group-item  list-inline">
-              <li class="caracteristicasL">Status</li>
-              <li class="caracteristicasR">Alive</li>
-            </ul> 
-
-          </div>
-        </div>  
-
-      </div>
-
-      <!-- CARD 2 -->
-
-      <div class="card card-inverse card-primary text-center">
-        <img class="card-img-top" src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" alt="Card">
-        <div class="card-block">
-          <h5 class="card-title">Morty Smith</h5>
-
-          <div class="card-body">   
-
-            <ul class="list-group-item list-inline">
-              <li class="caracteristicasL">Species</li>
-              <li class="caracteristicasR">Human</li>
-            </ul>
-
-            <hr>
-
-            <ul class="list-group-item list-inline">
-              <li class="caracteristicasL">Gender</li>
-              <li class="caracteristicasR">Male</li>
-            </ul>  
-
-            <hr>
-
-            <ul class="list-group-item  list-inline">
-              <li class="caracteristicasL">Status</li>
-              <li class="caracteristicasR">Alive</li>
-            </ul>   
-
-          </div>
-
-      </div>
-    </div>
-
-    <!-- CARD 3 -->
-    
-    <div class="card card-inverse card-primary text-center">
-      <img class="card-img-top" src="https://rickandmortyapi.com/api/character/avatar/3.jpeg" alt="Card">
-      <div class="card-block">
-        <h5 class="card-title">Summer Smith</h5>
-
-        <div class="card-body">   
-
-          <ul class="list-group-item list-inline">
-            <li class="caracteristicasL">Species</li>
-            <li class="caracteristicasR">Human</li>
-          </ul>
-
-          <hr>
-
-          <ul class="list-group-item list-inline">
-            <li class="caracteristicasL">Gender</li>
-            <li class="caracteristicasR">Female</li>
-          </ul>  
-
-          <hr>
-
-          <ul class="list-group-item  list-inline">
-            <li class="caracteristicasL">Status</li>
-            <li class="caracteristicasR">Alive</li>
-          </ul>   
-
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 4 -->
-
-    <div class="card card-inverse card-primary text-center">
-      <img class="card-img-top" src="https://rickandmortyapi.com/api/character/avatar/4.jpeg" alt="Card">
-      <div class="card-block">
-        <h5 class="card-title">Beth Smith</h5>
-          <div class="card-body">
-
-            <ul class="list-group-item list-inline">
-              <li class="caracteristicasL">Species</li>
-              <li class="caracteristicasR">Human</li>
-            </ul>
-
-            <hr>
-
-            <ul class="list-group-item list-inline">
-              <li class="caracteristicasL">Gender</li>
-              <li class="caracteristicasR">Female</li>
-            </ul>  
-
-            <hr>
-
-            <ul class="list-group-item  list-inline">
-              <li class="caracteristicasL">Status</li>
-              <li class="caracteristicasR">Alive</li>
-            </ul>   
-
-          </div>  
-      </div>
-    </div>
-
-    <!-- CARD 5 -->
-
-    <div class="card card-inverse card-primary text-center">
-      <img class="card-img-top" src="https://rickandmortyapi.com/api/character/avatar/5.jpeg" alt="Card">
-      <div class="card-block">
-        <h5 class="card-title">Jerry Smith</h5>
-        <div class="card-body">
-
-          <ul class="list-group-item list-inline">
-            <li class="caracteristicasL">Species</li>
-            <li class="caracteristicasR">Human</li>
-          </ul>
-
-          <hr>
-
-          <ul class="list-group-item list-inline">
-            <li class="caracteristicasL">Gender</li>
-            <li class="caracteristicasR">Male</li>
-          </ul>  
-
-          <hr>
-
-          <ul class="list-group-item  list-inline">
-            <li class="caracteristicasL">Status</li>
-            <li class="caracteristicasR">Alive</li>
-          </ul>   
-
-        </div>  
-      </div>
-    </div>
-
-
-    <!-- CARD 6 -->
-
-    <div class="card card-inverse card-primary text-center">
-        <img class="card-img-top" src="https://rickandmortyapi.com/api/character/avatar/6.jpeg" alt="Card">
-        <div class="card-block">
-          <h5 class="card-title">Abadango Cluster Princess</h5>
-          <div class="card-body">
-
-             <ul class="list-group-item list-inline">
-              <li class="caracteristicasL">Species</li>
-              <li class="caracteristicasR">Alien</li>
-            </ul>
-
-            <hr>
-
-            <ul class="list-group-item list-inline">
-              <li class="caracteristicasL">Gender</li>
-              <li class="caracteristicasR">Female</li>
-            </ul>  
-
-            <hr>
-
-            <ul class="list-group-item  list-inline">
-              <li class="caracteristicasL">Status</li>
-              <li class="caracteristicasR">Alive</li>
-            </ul>   
-
-          </div>  
-        </div>
-    </div>
-
+    <div id="datos"></div>
   
   </div>
 
 </div>
 
+ <script type="text/javascript">
+
+        //Ajax nos devuelve un array de objetos los cuales a su vez contienen varios valores como nombre, estado, genero, etc), por eso
+        // el succes nos devuelve una funcion llamada en este caso respuesta, pero podemos poder otro nombre siempre que depsues usemos mismo nombre para acceder a los datos
+
+        // (*) Con el bucle, $.each(respuesta.data, function(index, elemento), le digo que por cada objeto que encuentre en el json , una vez definidos varios parametros , va a crear una card de cada personaje. En este json, cada personaje es un objeto, el cual contiene a su vez varios datos, nombre, estado, genero, etc) 
+
+        //Pero si no le decimos como queremos que muestre el sistema grid, nos va a mostrar una card debajo de la otra, por tanto necesitamos decirle que cree columnas
+
+        //Entonces  CON append, le digo que en el div con id="datos", ponga un div, y aqui esta la clave, tenemso que decirle cuantas columnas va a crear por fila,  por tanto
+        // le decimos que queremos 3 columnas con el sistema grid,  le decimos col-md-4, ya que 4x3columnas son 12 que es el total del grid, ademas le decimos
+        // que para tablet muestre 2 columnas con col-sm-6 (6+6=12) y para movil una columna con col-xs--12
+
+        //Ademas le digo que tenga un padding para separarlas. tambien podemos ponerle desde aqui borde etc
+
+        // asi le decimos como queremos las columnas, (esto es lo que no ponia, por eso me ponia una card debajo de la otra)
+
+        // Ahora una vez le hemos dicho cuantas columnas queremos por fila tanto en pc, como tablet, como movil, despues de .html, le decimos lo que queremos que incopore cada card y le vamos dando formato con <br> para ir separando en parrafo siguiente, tambien le decimos si es un texto (h1, h2), si es una imagen, y ademas añadiendole clases podemos personalizarla con la hoja de estilos externa que tenemos
+
+    
+$(document).ready(function() {
+
+  $.ajax({
+    url: 'resouces-rick-morty.json',
+    dataType: 'json',
+    success: function(respuesta) {
+    
+        // (*) EXPLICACION
+      $.each(respuesta.data, function(index, elemento) {
+         
+      $('#datos').append(
+
+        $('<div class="col-md-4 col-sm-6 col-xs-12" style="padding: 30px">').html(
+
+          '<div class="card2">'+'<img class="card-img-top" src=' + elemento.image + '></img>'
+          +'<h2 class="card-title">' + elemento.name + '</h2>' + '<br>'
+          + '<div class="caracteristicasL">' + 'Species: ' + '</div>' +  '<div class="caracteristicasR">' + elemento.species + '</div>' + '<br>'
+          + '<hr>'
+          + '<div class="caracteristicasL">' + "Genger: " + '</div>' +  '<div class="caracteristicasR">' + elemento.gender + '</div>' + '<br>' 
+          + '<hr>'
+          + '<div class="caracteristicasL">' + "Status: " + '</div>' +  '<div class="caracteristicasR">' + elemento.status + '</div>' + '<br>' + '<br>'
+          + '</div>'
+        ),
+      
+      );
+
+
+    });
+     
+
+    },
+    error: function() {
+      console.log("No se ha podido obtener la información");
+    }
+  });
+  });
+
+</script>
+
  
 </body>
 </html>
+
+<!--
+
+  
+  $('<div class="col-md-4" style="padding: 30px; >').html
+      ('<img src=' + elemento.image + '></img>' +'<h2>' + elemento.name + '</h2>' + '<div class="caracteristicas">' + 'Species: ' + '</div>' +  '<div class="caracteristicas">' + elemento.species+ '</div>' + '</div>' + '<br>' + "Genger: " + elemento.gender + '<br>' + "Status: " + elemento.status+ '<br>'),
+      );
+
+
+
+
+$('<div class="col-md-4" style="padding: 30px;>').html
+      ('<img src=' + elemento.image + '></img>' +'<h2>' + elemento.name + '</h2>' + "Species: " +  elemento.species + '<br>' + "Genger: " + elemento.gender + '<br>' + "Status: " + elemento.status+ '<br>'),
+      );
+
+
+-->
 
